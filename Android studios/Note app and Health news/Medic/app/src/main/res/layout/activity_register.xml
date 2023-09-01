@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_register"
+>
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/newregister"
+        android:scaleType="centerCrop"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/img_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/iconhealth"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:id="@+id/un_layout"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_layout"
+        android:hint="Username"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            app:hintAnimationEnabled="true"
+            android:drawableLeft="@drawable/user"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:id="@+id/pas_layout"
+        android:layout_below="@+id/mail_layout"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        app:hintAnimationEnabled="true"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:id="@+id/password"
+            android:drawableLeft="@drawable/password"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:id="@+id/mail_layout"
+        android:layout_below="@+id/un_layout"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        app:hintAnimationEnabled="true"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:id="@+id/email"
+            android:drawableLeft="@drawable/e_mail"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/register"
+        style="?attr/materialButtonOutlinedStyle"
+        android:textColor="@color/white"
+        android:layout_below="@+id/pas_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+
+
+
+
+</RelativeLayout>

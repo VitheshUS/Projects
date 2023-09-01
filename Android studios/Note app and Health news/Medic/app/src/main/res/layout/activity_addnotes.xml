@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sidemenu.addnotesActivity"
+    android:background="@color/black"
+    android:orientation="vertical"
+    >
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/toolbar_notes"
+     >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/view_save"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/baseline_add_24"
+                android:padding="4dp"
+                />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textColorHint="@color/white"
+        android:id="@+id/input_title"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_notes"
+        android:hint="note"
+        android:textColorHint="@color/white"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        />
+</LinearLayout>
