@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="admin.admin_main"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawer"
+    tools:ignore="ExtraText"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/admin_main_two"
+        android:scaleType="centerCrop"/>
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/framelayout"
+            >
+        </FrameLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="70dp"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/room_admin"-->
+<!--                android:id="@+id/rooms"-->
+<!--                android:layout_marginLeft="60dp"-->
+<!--                />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="50dp"-->
+<!--                android:src="@drawable/owner_admin"-->
+<!--                android:id="@+id/owner"-->
+<!--                />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/add_admin"-->
+<!--                android:layout_marginLeft="50dp"-->
+<!--                android:id="@+id/addowner"-->
+<!--                />-->
+
+<!--        </LinearLayout>-->
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/grey"
+            android:id="@+id/admin_navigation_bar"
+            app:menu="@menu/bottom_navigation_admin"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:title="PGs"
+    android:id="@+id/admin_pg"
+    android:icon="@drawable/rooms_admin"
+    />
+
+    <item
+        android:title="Owners"
+        android:id="@+id/admin_owner"
+        android:icon="@drawable/owner_admin"
+        />
+
+    <item
+        android:title="Add Owners"
+        android:id="@+id/admin_add_owner"
+        android:icon="@drawable/add_admin"
+        />
+
+</menu>

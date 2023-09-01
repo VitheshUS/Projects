@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Maps.login_and_registration.user_register"
+    >
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/blue_light_blue"
+        android:scaleType="centerCrop"
+
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:text="User Registration"
+    android:textStyle="bold"
+    android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/img_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:id="@+id/email_layout"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_layout"
+        android:hint="Username"
+        android:layout_marginTop="80dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:hintAnimationEnabled="true"
+            android:drawableLeft="@drawable/user"
+            android:background="@drawable/curved_fields"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:id="@+id/pas_layout"
+        android:layout_below="@+id/email_layout"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        app:hintAnimationEnabled="true"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/curved_fields"
+            android:id="@+id/password"
+            android:drawableLeft="@drawable/password"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:id="@+id/cpass_layout"
+        android:layout_below="@+id/pas_layout"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Confirm Password"
+        app:hintAnimationEnabled="true"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/curved_fields"
+            android:id="@+id/cpassword"
+            android:drawableLeft="@drawable/e_mail"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/register"
+        android:background="@drawable/curved_field2"
+
+        android:textColor="@color/black"
+        android:layout_below="@+id/cpass_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sahyadri_logo_logins"
+
+        />
+
+
+
+</RelativeLayout>
